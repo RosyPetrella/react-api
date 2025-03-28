@@ -28,10 +28,12 @@ function App() {
                   <div className="card">
                     <img
                       className="card-img-top"
-                      src="base_api_url + post.image"
+                      src={base_api_url + post.image}
                       alt=""
+                      style={{ height: "240px", objectFit: "cover" }}
                     />
-                    <div className="card-body">{post.title}</div>
+                    <div className="card-title">{post.title}</div>
+                    <div className="card-body">{post.content}</div>
                   </div>
                 </div>
               ))}
